@@ -1,5 +1,5 @@
 {
-  "name": "afrifans-waitlist-api",
+  "name": "pxxl-waitlist-api",
   "version": "1.0.0",
   "description": "waitlist",
   "main": "server.js",
@@ -8,7 +8,7 @@
     "dev": "nodemon server"
   },
   "keywords": [],
-  "author": "Solomon Olatunji <realsolomon07@gmail.com>",
+  "author": "Victor Olatunji <victoluolatunji@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "autoprefixer": "^10.4.14",
@@ -32,5 +32,5 @@
     "@flydotio/dockerfile": "^0.5.2",
     "nodemon": "^2.0.20"
   },
-  "repository": "https://github.com/devrealsolomon/Afrifans-waitlist-api.git"
+  "repository": "https://github.com/victorola-coder/Pxxl-waitlist-api.git"
 }

@@ -1,5 +1,5 @@
 const contentEmail = function (name, content) {
-    const html = `
+  const html = `
     <!DOCTYPE html>
 <html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 
@@ -147,8 +147,8 @@ const contentEmail = function (name, content) {
                       </p>
                       </br>
                       <p style="text-align: center;">
-                      Email: <a href="mailto:support@afrifans.com" class="hover-underline"
-                          style="--text-opacity: 1; color: #7367f0; text-decoration: none;">support@afrifans.com</a>.
+                      Email: <a href="mailto:support@pxxl.app" class="hover-underline"
+                          style="--text-opacity: 1; color: #7367f0; text-decoration: none;">support@pxxl.app</a>.
                       </p>
                     </td>
                   </tr>
@@ -167,7 +167,7 @@ const contentEmail = function (name, content) {
 	                <a href="https://www.tiktok.com"><i class="fa fa-tiktok social-media-icon tiktok-icon"></i></a>
                   </br> 
                   <p style="font-weight: 600; font-size: 18px; margin-bottom: 0;">
-                  <center> &copy; 2023 Afrifans LLC. All rights reserved.
+                  <center> &copy; 2024 Pxxl. All rights reserved.
                   <br />
                   Abuja, Nigeria.</center></p>
               </td>
@@ -180,15 +180,15 @@ const contentEmail = function (name, content) {
 </body>
 
 </html>`;
-    const text = `
+  const text = `
         Welcome and thank you for joining our waitlist:
         ${name}
 
 If you did not requested a password reset, please ignore this email or reply to let us know. This password reset is only valid for the next 2 hours.`;
-    return {
-        html: html,
-        text: text,
-    };
+  return {
+    html: html,
+    text: text,
+  };
 };
 
 module.exports = contentEmail;

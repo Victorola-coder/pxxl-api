@@ -1,17 +1,20 @@
 const welcomeEmail = function () {
   const html = `
-  <!DOCTYPE html>
+    <!DOCTYPE html>
   <html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" lang="en">
   
   <head>
 	  <title></title>
 	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	  <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--[if mso]><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch><o:AllowPNG/></o:OfficeDocumentSettings></xml><![endif]--><!--[if !mso]><!-->
-	  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
-	  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css"><!--<![endif]-->
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link
+    href="https://fonts.googleapis.com/css?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700"
+    rel="stylesheet" media="screen">
+	  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
 	  <style>
 		  * {
 			  box-sizing: border-box;
+              font-family: "Montserrat", sans-serif;
 		  }
   
 		  body {
@@ -111,7 +114,7 @@ const welcomeEmail = function () {
 														  <tr>
 															  <td class="pad">
 																  <div class="alignment" align="center" style="line-height:10px">
-																	  <div class="fullWidth" style="max-width: 305px;"><a href="#" target="_blank" style="outline:none" tabindex="-1"><img src="https://e8e9c10274.imgdist.com/public/users/Integrators/BeeProAgency/1152462_1138150/cover.png" style="display: block; height: auto; border: 0; width: 100%;" width="305" alt="Logo" title="Logo"></a></div>
+																	  <div class="fullWidth" style="max-width: 305px;"><a href="#" target="_blank" style="outline:none" tabindex="-1"><img src="https://cdn.dropp.cloud/jpnl26.svg" style="display: block; height: auto; border: 0; width: 100%;" width="305" alt="Logo" title="Logo"></a></div>
 																  </div>
 															  </td>
 														  </tr>
@@ -136,7 +139,7 @@ const welcomeEmail = function () {
 														  <tr>
 															  <td class="pad" style="width:100%;">
 																  <div class="alignment" align="center" style="line-height:10px">
-																	  <div style="max-width: 650px;"><img src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/556/Top.png" style="display: block; height: auto; border: 0; width: 100%;" width="650" alt="Image" title="Image"></div>
+																	  <div style="max-width: 650px;"><img src="https://cdn.dropp.cloud/1iuomq.svg" style="display: block; height: auto; border: 0; width: 100%;" width="650" alt="Image" title="Image"></div>
 																  </div>
 															  </td>
 														  </tr>
@@ -160,8 +163,8 @@ const welcomeEmail = function () {
 													  <table class="paragraph_block block-1" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
 														  <tr>
 															  <td class="pad" style="padding-bottom:5px;padding-left:10px;padding-right:10px;padding-top:10px;">
-																  <div style="color:#B1AED1;font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:20px;line-height:120%;text-align:center;mso-line-height-alt:24px;">
-																	  <p style="margin: 0; word-break: break-word;"><span>THANK YOU FOR SIGNING UP</span></p>
+																  <div style="color:#B1AED1;font-size:40px; font-weight:bold;line-height:120%;text-align:center;mso-line-height-alt:24px;">
+																	  <p style="margin: 0; word-break: break-word;"><span>LETS BUILD FROM HERE</span></p>
 																  </div>
 															  </td>
 														  </tr>
@@ -169,8 +172,8 @@ const welcomeEmail = function () {
 													  <table class="paragraph_block block-2" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
 														  <tr>
 															  <td class="pad" style="padding-bottom:5px;padding-left:5px;padding-right:5px;">
-																  <div style="color:#454562;font-family:'Roboto',Tahoma,Verdana,Segoe,sans-serif;font-size:38px;line-height:120%;text-align:center;mso-line-height-alt:45.6px;">
-																	  <p style="margin: 0; word-break: break-word;"><span>Create something awesome!</span></p>
+																  <div style="color:#454562;font-size:18px;line-height:120%;text-align:center;mso-line-height-alt:45.6px;">
+																	  <p style="margin: 0; word-break: break-word;"><span>Your Free Ticket to Boundless Creativity</span></p>
 																  </div>
 															  </td>
 														  </tr>
@@ -178,8 +181,9 @@ const welcomeEmail = function () {
 													  <table class="paragraph_block block-3" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
 														  <tr>
 															  <td class="pad" style="padding-bottom:10px;padding-left:25px;padding-right:25px;padding-top:10px;">
-																  <div style="color:#555555;font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;line-height:150%;text-align:center;mso-line-height-alt:21px;">
-																	  <p style="margin: 0; word-break: break-word;">Far away from the ordinary, in the realm of Afrifanz - Africa's premier 18+ Creators platform - we're crafting an extraordinary experience just for you. Behind the scenes, we're preparing something special that's bound to set the stage on fire.</p>
+																  <div style="color:#555555;font-size:15px;line-height:150%;text-align:start;mso-line-height-alt:21px;">
+																	  <p style="margin: 0; word-break: break-word;">Thank you for joining the waitlist for PXXL APP. We’re thrilled to have you on this journey with us! Get ready to explore a world of limitless possibilities with our cutting-edge, free web hosting platform. Keep an eye on your inbox—we’ll be sending you exclusive updates, sneak peeks, and an early invite to start building your projects before anyone else.
+</p>
 																  </div>
 															  </td>
 														  </tr>
@@ -188,7 +192,7 @@ const welcomeEmail = function () {
 														  <tr>
 															  <td class="pad" style="padding-top:15px;width:100%;padding-right:0px;padding-left:0px;">
 																  <div class="alignment" align="center" style="line-height:10px">
-																	  <div class="fullWidth" style="max-width: 560.5px;"><img src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/556/welcome.gif" style="display: block; height: auto; border: 0; width: 100%;" width="560.5" alt="I'm an image" title="I'm an image"></div>
+																	  <div class="fullWidth" style="max-width: 560.5px; display:none;"><img src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/556/welcome.gif" style="display: block; height: auto; border: 0; width: 100%;" width="560.5" alt="I'm an image" title="I'm an image"></div>
 																  </div>
 															  </td>
 														  </tr>
@@ -213,7 +217,7 @@ const welcomeEmail = function () {
 														  <tr>
 															  <td class="pad" style="padding-left:10px;padding-right:10px;padding-top:10px;">
 																  <div style="color:#FFFFFF;font-family:'Roboto',Tahoma,Verdana,Segoe,sans-serif;font-size:34px;line-height:120%;text-align:center;mso-line-height-alt:40.8px;">
-																	  <p style="margin: 0; word-break: break-word;"><span><strong>Connect with Your Audience</strong></span></p>
+																	  <p style="margin: 0; word-break: break-word;"><span><strong>let’s build the future together</strong></span></p>
 																  </div>
 															  </td>
 														  </tr>
@@ -221,8 +225,10 @@ const welcomeEmail = function () {
 													  <table class="paragraph_block block-2" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
 														  <tr>
 															  <td class="pad" style="padding-bottom:10px;padding-left:30px;padding-right:30px;padding-top:10px;">
-																  <div style="color:#FFFFFF;font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;line-height:150%;text-align:center;mso-line-height-alt:21px;">
-																	  <p style="margin: 0; word-break: break-word;">Step into the spotlight and let your creativity shine! Afrifanz, the unrivaled hub for Africa's most captivating 18+ Creators, invites you to set up your profile and embark on a journey of self-expression like never before.</p>
+																  <div style="color:#FFFFFF;font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:12px;line-height:150%;text-align:start;mso-line-height-alt:21px;">
+																	  <p style="margin: 0; word-break: break-word;">At PXXL APP, we’re not just offering web hosting, we’re opening the doors to infinite possibilities. Whether you're launching your personal blog, an e-commerce empire, or the next groundbreaking web app, you deserve a platform that scales as far as your imagination can take you. Built on cutting-edge space tech, PXXL APP offers robust, secure, and flexible hosting solutions completely free.
+
+</p>
 																  </div>
 															  </td>
 														  </tr>
@@ -247,7 +253,7 @@ const welcomeEmail = function () {
 														  <tr>
 															  <td class="pad" style="width:100%;">
 																  <div class="alignment" align="center" style="line-height:10px">
-																	  <div style="max-width: 99px;"><img src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/556/Icon_logo_animate.gif" style="display: block; height: auto; border: 0; width: 100%;" width="99" alt="Image" title="Image"></div>
+																	  <div style="max-width: 99px;"><img src="https://cdn.dropp.cloud/jpnl26.svg" style="display: block; height: auto; border: 0; width: 100%;" width="99" alt="Image" title="Image"></div>
 																  </div>
 															  </td>
 														  </tr>
@@ -256,7 +262,7 @@ const welcomeEmail = function () {
 														  <tr>
 															  <td class="pad">
 																  <div style="color:#555555;font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:18px;line-height:120%;text-align:center;mso-line-height-alt:21.599999999999998px;">
-																	  <p style="margin: 0; word-break: break-word;"><span><strong>Afrifanz</strong>, The No 1 African's most popular 18+ Creators.</span></p>
+																	  <p style="margin: 0; word-break: break-word;"><span><strong>Pxxl</strong>, The No 1 African's most popular Hosting platform</span></p>
 																  </div>
 															  </td>
 														  </tr>
@@ -298,7 +304,7 @@ const welcomeEmail = function () {
 															  <td class="pad">
 																  <div style="font-family: sans-serif">
 																	  <div class style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; mso-line-height-alt: 14.399999999999999px; color: #6B6B6B; line-height: 1.2;">
-																		  <p style="margin: 0; font-size: 14px; text-align: center; mso-line-height-alt: 16.8px;">123 Kwara, Ilorin, Nigeria / All rights reserved<br>Made with&nbsp;<span style="font-size:14px;color:#c059ff;">❤</span>&nbsp;</p>
+																		  <p style="margin: 0; font-size: 14px; text-align: center; mso-line-height-alt: 16.8px;">123 Port Harcourt, Nigeria / All rights reserved<br>Made with&nbsp;<span style="font-size:14px;color:#c059ff;">❤</span>&nbsp;</p>
 																	  </div>
 																  </div>
 															  </td>
@@ -315,11 +321,12 @@ const welcomeEmail = function () {
 				  </td>
 			  </tr>
 		  </tbody>
-	  </table><!-- End -->
+	  </table>
   </body>
   
-  </html>`;
-  const text = `Welcome to Afrifanz`;
+  </html>
+ `;
+  const text = `Welcome to Pxxl`;
   return {
     html: html,
     text: text,
