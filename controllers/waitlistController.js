@@ -4,7 +4,6 @@ const Waitlist = require("../model/waitlistModel");
 const sendEmail = require("../utils/sendEmail");
 const waitlist = require("../email/waitlist");
 const contentemail = require("../email/contentemail");
-
 const WaitList = asyncHandler(async (req, res) => {
   const { email } = req.body;
 
@@ -34,12 +33,12 @@ const WaitList = asyncHandler(async (req, res) => {
     const name = "Comrade";
     const emailTemplate = waitlist(name);
     const to = email;
-    const subject = "Thanks For Joining";
+    const subject = "Welcome to the Pxxl.Space";
     const html = emailTemplate.html;
 
     await sendEmail(to, subject, html);
     console.log("Welcome Email sent!");
-    res.status(200).json({ success: true, message: "Waitlist Email Sent" });
+    res.status(200).json({ success: true, message: "Thanks for joining!🥹" });
   } catch (error) {
     console.error(error);
     res
@@ -65,7 +64,7 @@ const sendEmailToWaitlist = asyncHandler(async (req, res) => {
       await sendEmail(to, subject, html);
       console.log("Welcome Email sent!");
     }
-    res.status(200).json({ success: true, message: "Waitlist Email Sent" });
+    res.status(200).json({ success: true, message: "Thanks for joining!🥹" });
   } catch (error) {
     res.status(500);
     throw new Error("Email not sent, please try again");
