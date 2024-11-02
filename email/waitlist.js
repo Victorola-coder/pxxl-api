@@ -14,12 +14,13 @@ const welcomeEmail = function () {
 	  <style>
 		  * {
 			  box-sizing: border-box;
-              font-family: "Montserrat", sans-serif;
+             font-family: "Montserrat", serif;
 		  }
   
 		  body {
 			  margin: 0;
 			  padding: 0;
+			  font-family: "Montserrat", serif;
 		  }
   
 		  a[x-apple-data-detectors] {
