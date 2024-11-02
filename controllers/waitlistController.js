@@ -13,22 +13,22 @@ const WaitList = asyncHandler(async (req, res) => {
     throw new Error("Please add your email");
   }
 
-  if (email) {
-    let user = await Waitlist.findOne({ email });
+  // if (email) {
+  //   let user = await Waitlist.findOne({ email });
 
-    if (user) {
-      res.status(400).json({
-        message: "You are already on our waitlist",
-        success: false,
-      });
-      return;
-    } else {
-      await Waitlist.create({
-        _id: new mongoose.Types.ObjectId(),
-        email,
-      });
-    }
-  }
+  //   if (user) {
+  //     res.status(400).json({
+  //       message: "You are already on our waitlist",
+  //       success: false,
+  //     });
+  //     return;
+  //   } else {
+  //     // await Waitlist.create({
+  //     //   _id: new mongoose.Types.ObjectId(),
+  //     //   email,
+  //     // });
+  //   }
+  // }
 
   try {
     const name = "Comrade";

@@ -23,6 +23,7 @@ const getEmailService = () => {
                 auth: {
                     user: username,
                     pass: password,
+                    secure: true,
                 },
             })
         },
@@ -46,7 +47,7 @@ const getEmailService = () => {
     const defaultEmailProvider =
         process.env.DEFAULT_EMAIL_PROVIDER?.toLowerCase() || 'mailtrap';
 
-    if (!emailProviders[defaultEmailProvider]) {
+    if (!emailProviders[defaultEmailProvider]) { 
         throw new Error(
             `Invalid email provider '${defaultEmailProvider}'. Supported providers are ${Object.keys(
                 emailProviders

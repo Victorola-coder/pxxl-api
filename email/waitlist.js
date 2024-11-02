@@ -114,7 +114,7 @@ const welcomeEmail = function () {
 														  <tr>
 															  <td class="pad">
 																  <div class="alignment" align="center" style="line-height:10px">
-																	  <div class="fullWidth" style="max-width: 305px;"><a href="#" target="_blank" style="outline:none" tabindex="-1"><img src="https://cdn.dropp.cloud/jpnl26.svg" style="display: block; height: auto; border: 0; width: 100%;" width="305" alt="Logo" title="Logo"></a></div>
+																	  <div class="fullWidth" style="max-width: 305px;"><a href="#" target="_blank" style="outline:none" tabindex="-1"><img src="https://res.cloudinary.com/dehlbrx8f/image/upload/v1730563981/pxxl/co0ibg8vg5kdxdj3sf53.png" style="display: block; height: auto; border: 0; width: 100%;" width="305" alt="Logo" title="Logo"></a></div>
 																  </div>
 															  </td>
 														  </tr>
@@ -139,7 +139,7 @@ const welcomeEmail = function () {
 														  <tr>
 															  <td class="pad" style="width:100%;">
 																  <div class="alignment" align="center" style="line-height:10px">
-																	  <div style="max-width: 650px;"><img src="https://cdn.dropp.cloud/1iuomq.svg" style="display: block; height: auto; border: 0; width: 100%;" width="650" alt="Image" title="Image"></div>
+																	  <div style="max-width: 650px;"><img src="https://res.cloudinary.com/dehlbrx8f/image/upload/v1730563717/pxxl/swtr5ed7uln6zxwbzne4.png" style="display: block; height: auto; border: 0; width: 100%;" width="650" alt="Image" title="Image"></div>
 																  </div>
 															  </td>
 														  </tr>
@@ -192,7 +192,7 @@ const welcomeEmail = function () {
 														  <tr>
 															  <td class="pad" style="padding-top:15px;width:100%;padding-right:0px;padding-left:0px;">
 																  <div class="alignment" align="center" style="line-height:10px">
-																	  <div class="fullWidth" style="max-width: 560.5px; display:none;"><img src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/556/welcome.gif" style="display: block; height: auto; border: 0; width: 100%;" width="560.5" alt="I'm an image" title="I'm an image"></div>
+																	  <div class="fullWidth" style="max-width: 560.5px;"><img src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/556/welcome.gif" style="display: block; height: auto; border: 0; width: 100%;" width="560.5" alt="I'm an image" title="I'm an image"></div>
 																  </div>
 															  </td>
 														  </tr>
@@ -253,7 +253,7 @@ const welcomeEmail = function () {
 														  <tr>
 															  <td class="pad" style="width:100%;">
 																  <div class="alignment" align="center" style="line-height:10px">
-																	  <div style="max-width: 99px;"><img src="https://cdn.dropp.cloud/jpnl26.svg" style="display: block; height: auto; border: 0; width: 100%;" width="99" alt="Image" title="Image"></div>
+																	  <div style="max-width: 99px;"><img src="https://res.cloudinary.com/dehlbrx8f/image/upload/v1730563981/pxxl/co0ibg8vg5kdxdj3sf53.png" style="display: block; height: auto; border: 0; width: 100%;" width="99" alt="Image" title="Image"></div>
 																  </div>
 															  </td>
 														  </tr>
