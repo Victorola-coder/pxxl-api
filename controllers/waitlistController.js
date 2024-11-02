@@ -67,6 +67,23 @@ const getWaitlist = asyncHandler(async (req, res) => {
   });
 });
 
+const deleteWaitlist = asyncHandler(async (req, res) => {
+  const { email } = req.body;
+  if(!email){
+    res.status(400)
+    throw new Error("Please provide an email")
+  }
+
+  const user = await Waitlist.findOne({ email });
+  if(!user){
+    res.status(400)
+    throw new Error("Email not found in waitlist")
+  }
+
+  await Waitlist.findOneAndDelete({ email });
+  res.status(200).json({ success: true, message: "Email successfully removed from waitlist" });
+});
+
 
 const sendEmailToWaitlist = asyncHandler(async (req, res) => {
   const { title, content } = req.body;
@@ -95,5 +112,6 @@ const sendEmailToWaitlist = asyncHandler(async (req, res) => {
 module.exports = {
   getWaitlist,
   WaitList,
+  deleteWaitlist,
   sendEmailToWaitlist,
 };
