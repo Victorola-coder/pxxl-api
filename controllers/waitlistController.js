@@ -47,6 +47,27 @@ const WaitList = asyncHandler(async (req, res) => {
   }
 });
 
+const getWaitlist = asyncHandler(async (req, res) => {
+  const { page = 1, limit = 10, search = '' } = req.query;
+
+  const query = search ? { email: { $regex: search, $options: 'i' } } : {};
+  const users = await Waitlist.find(query)
+    .select("email name -_id")
+    .skip((page - 1) * limit)
+    .limit(limit);
+
+  const total = await Waitlist.countDocuments(query);
+  const totalPages = Math.ceil(total / limit);
+
+  res.status(200).json({
+    users,
+    totalPages,
+    currentPage: page,
+    totalUsers: total,
+  });
+});
+
+
 const sendEmailToWaitlist = asyncHandler(async (req, res) => {
   const { title, content } = req.body;
 
@@ -72,6 +93,7 @@ const sendEmailToWaitlist = asyncHandler(async (req, res) => {
 });
 
 module.exports = {
+  getWaitlist,
   WaitList,
   sendEmailToWaitlist,
 };
