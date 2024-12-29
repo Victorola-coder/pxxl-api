@@ -38,7 +38,10 @@ const WaitList = asyncHandler(async (req, res) => {
 
     await sendEmail(to, subject, html);
     console.log("Welcome Email sent!");
-    res.status(200).json({ success: true, message: "Thanks for joining!🥹" });
+    res.status(200).json({
+      success: true,
+      message: "Email sent, check spam folder if you don't see it",
+    });
   } catch (error) {
     console.error(error);
     res
@@ -48,9 +51,9 @@ const WaitList = asyncHandler(async (req, res) => {
 });
 
 const getWaitlist = asyncHandler(async (req, res) => {
-  const { page = 1, limit = 10, search = '' } = req.query;
+  const { page = 1, limit = 10, search = "" } = req.query;
 
-  const query = search ? { email: { $regex: search, $options: 'i' } } : {};
+  const query = search ? { email: { $regex: search, $options: "i" } } : {};
   const users = await Waitlist.find(query)
     .select("email name -_id")
     .skip((page - 1) * limit)
@@ -69,21 +72,23 @@ const getWaitlist = asyncHandler(async (req, res) => {
 
 const deleteWaitlist = asyncHandler(async (req, res) => {
   const { email } = req.body;
-  if(!email){
-    res.status(400)
-    throw new Error("Please provide an email")
+  if (!email) {
+    res.status(400);
+    throw new Error("Please provide an email");
   }
 
   const user = await Waitlist.findOne({ email });
-  if(!user){
-    res.status(400)
-    throw new Error("Email not found in waitlist")
+  if (!user) {
+    res.status(400);
+    throw new Error("Email not found in waitlist");
   }
 
   await Waitlist.findOneAndDelete({ email });
-  res.status(200).json({ success: true, message: "Email successfully removed from waitlist" });
+  res.status(200).json({
+    success: true,
+    message: "Email successfully removed from waitlist",
+  });
 });
-
 
 const sendEmailToWaitlist = asyncHandler(async (req, res) => {
   const { title, content } = req.body;
@@ -102,7 +107,10 @@ const sendEmailToWaitlist = asyncHandler(async (req, res) => {
       await sendEmail(to, subject, html);
       console.log("Welcome Email sent!");
     }
-    res.status(200).json({ success: true, message: "Thanks for joining!🥹" });
+    res.status(200).json({
+      success: true,
+      message: "Email sent to waitlist, check spam folder if you don't see it",
+    });
   } catch (error) {
     res.status(500);
     throw new Error("Email not sent, please try again");
