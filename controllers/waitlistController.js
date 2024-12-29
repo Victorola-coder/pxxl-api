@@ -4,12 +4,24 @@ const Waitlist = require("../model/waitlistModel");
 const sendEmail = require("../utils/sendEmail");
 const waitlist = require("../email/waitlist");
 const contentemail = require("../email/contentemail");
+const validateEmail = require("../utils/emailValidator");
+
 const WaitList = asyncHandler(async (req, res) => {
   const { email } = req.body;
 
   if (!email) {
     res.status(400);
     throw new Error("Please add your email");
+  }
+
+  // Validate email
+  const validation = validateEmail(email);
+  if (!validation.isValid) {
+    res.status(400).json({
+      message: validation.reason,
+      success: false,
+    });
+    return;
   }
 
   if (email) {
